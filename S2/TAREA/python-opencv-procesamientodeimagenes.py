@@ -5,17 +5,17 @@ print('Librerias leidas...')
 
 # Carga la imagen que se quiere procesar
 # Otras imágenes están comentadas, se puede descomentar para usarlas.
-#img = cv2.imread('TAREA/Lena.png') # Lena
-#img = cv2.imread('TAREA/ave.jpeg')  # Ave
-#img = cv2.imread('TAREA/actores.jpg') # Actores
-#img = cv2.imread('TAREA/girasol.jpg') # Girasol
-#img = cv2.imread('TAREA/will-smith.jpg')
-#img = cv2.imread('TAREA/leonardo.jpg')
-#img = cv2.imread('TAREA/alexandra.jpg')
-img = cv2.imread('TAREA/balotelli.jpg')
+#img = cv2.imread('Lena.png') # Lena
+#img = cv2.imread('ave.jpeg')  # Ave
+#img = cv2.imread('actores.jpg') # Actores
+#img = cv2.imread('girasol.jpg') # Girasol
+#img = cv2.imread('will-smith.jpg')
+#img = cv2.imread('leonardo.jpg')
+#img = cv2.imread('alexandra.jpg')
+img = cv2.imread('balotelli.jpg')
 
-# Redimensiona la imagen a 300 píxeles de ancho y 250 píxeles de alto
-img = cv2.resize(img, (300, 250))
+
+img = cv2.resize(img, (250, 200))
 
 # Crea un kernel de 5x5 lleno de unos, que se usará para dilatar y erosionar la imagen
 kernel = np.ones((5, 5), np.uint8)
